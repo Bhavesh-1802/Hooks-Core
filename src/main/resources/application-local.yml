@@ -1,0 +1,21 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    url: jdbc:postgresql://db.fpzjhgdcoyhltscntzve.supabase.co:5432/postgres
+    driver-class-name: org.postgresql.Driver
+    username: postgres
+    password: Hooks@11223344
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: https://hooksz.us.auth0.com/
